@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-section {
+    display: none;
+}
+
+.image-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    padding: 2em;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto 1em;
+    width: 50px;
+    height: auto;
+}
+
+.hidden-image {
+    display: block;
+    margin: 2em auto 0;
+    width: 80%;
+}
+
+.create-account-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-form h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.social-buttons button {
+    flex: 1;
+    margin: 0 0.5em;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.social-buttons button.google { background-color: #db4437; color: white; }
+.social-buttons button.facebook { background-color: #3b5998; color: white; }
+.social-buttons button.apple { background-color: black; color: white; }
+
+p {
+    text-align: center;
+    margin-top: 1em;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.hidden-ui{
+    width: 200px;
+    margin: auto;
+
+}
+
+.hidden-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .hidden-image {
+        display: none;
+
+    }
+
+    .image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        padding: 2em;
+    }
+
+    .image-section img {
+        width: 50%; /* Adjusts the image size to 50% */
+        height: auto;
+    }
+
+    .form-section {
+        flex: 1;
+        padding: 4em;
+    }
+}
